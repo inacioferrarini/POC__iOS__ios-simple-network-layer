@@ -1,0 +1,11 @@
+
+workspace: SimpleNetworkLayer.xcworkspace
+xcodeproj: SimpleNetworkLayer.xcodeproj
+scheme: SimpleNetworkLayer
+output_directory: slather-report
+source_directory: SimpleNetworkLayer
+coverage_service: html
+ignore:
+  - Pods/*
+  - SimpleNetworkLayerTests/*
+

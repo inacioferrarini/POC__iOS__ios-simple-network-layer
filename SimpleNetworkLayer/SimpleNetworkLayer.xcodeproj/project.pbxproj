@@ -1,0 +1,612 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		765B51241EFDA4B000D0DABC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765B51231EFDA4B000D0DABC /* AppDelegate.swift */; };
+		765B51291EFDA4B000D0DABC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 765B51271EFDA4B000D0DABC /* Main.storyboard */; };
+		765B512B1EFDA4B000D0DABC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 765B512A1EFDA4B000D0DABC /* Assets.xcassets */; };
+		765B512E1EFDA4B000D0DABC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 765B512C1EFDA4B000D0DABC /* LaunchScreen.storyboard */; };
+		765B51391EFDA4B000D0DABC /* SimpleNetworkLayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765B51381EFDA4B000D0DABC /* SimpleNetworkLayerTests.swift */; };
+		765B51481EFDB42600D0DABC /* Transformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765B51471EFDB42600D0DABC /* Transformer.swift */; };
+		765B514A1EFDB45F00D0DABC /* AppBaseApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765B51491EFDB45F00D0DABC /* AppBaseApi.swift */; };
+		765B51501EFDB6E300D0DABC /* FinancialApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765B514F1EFDB6E300D0DABC /* FinancialApiClient.swift */; };
+		765B51541EFDB73300D0DABC /* FixerApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765B51531EFDB73300D0DABC /* FixerApi.swift */; };
+		765B51561EFDB7E600D0DABC /* Rates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765B51551EFDB7E600D0DABC /* Rates.swift */; };
+		765B515A1EFDB8A000D0DABC /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765B51591EFDB8A000D0DABC /* ApiClient.swift */; };
+		765B515C1EFDBA0A00D0DABC /* AnyObjectToRateTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765B515B1EFDBA0A00D0DABC /* AnyObjectToRateTransformer.swift */; };
+		7B388F92737B66E64045AA8C /* Pods_SimpleNetworkLayerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D731928328177BCCF377BFE6 /* Pods_SimpleNetworkLayerTests.framework */; };
+		FC04E09950F28E0894D5558A /* Pods_SimpleNetworkLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC0C7970C24581E36BE6F596 /* Pods_SimpleNetworkLayer.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		765B51351EFDA4B000D0DABC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 765B51181EFDA4B000D0DABC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 765B511F1EFDA4B000D0DABC;
+			remoteInfo = SimpleNetworkLayer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		35EC9A137275C9E9E1CEDCD9 /* Pods-SimpleNetworkLayer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleNetworkLayer.release.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleNetworkLayer/Pods-SimpleNetworkLayer.release.xcconfig"; sourceTree = "<group>"; };
+		4ECFCA101519F55FEE23467A /* Pods-SimpleNetworkLayerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleNetworkLayerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleNetworkLayerTests/Pods-SimpleNetworkLayerTests.release.xcconfig"; sourceTree = "<group>"; };
+		765B51201EFDA4B000D0DABC /* SimpleNetworkLayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleNetworkLayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		765B51231EFDA4B000D0DABC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		765B51281EFDA4B000D0DABC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		765B512A1EFDA4B000D0DABC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		765B512D1EFDA4B000D0DABC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		765B512F1EFDA4B000D0DABC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		765B51341EFDA4B000D0DABC /* SimpleNetworkLayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleNetworkLayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		765B51381EFDA4B000D0DABC /* SimpleNetworkLayerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleNetworkLayerTests.swift; sourceTree = "<group>"; };
+		765B513A1EFDA4B000D0DABC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		765B51471EFDB42600D0DABC /* Transformer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transformer.swift; sourceTree = "<group>"; };
+		765B51491EFDB45F00D0DABC /* AppBaseApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppBaseApi.swift; sourceTree = "<group>"; };
+		765B514F1EFDB6E300D0DABC /* FinancialApiClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinancialApiClient.swift; sourceTree = "<group>"; };
+		765B51531EFDB73300D0DABC /* FixerApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FixerApi.swift; sourceTree = "<group>"; };
+		765B51551EFDB7E600D0DABC /* Rates.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rates.swift; sourceTree = "<group>"; };
+		765B51591EFDB8A000D0DABC /* ApiClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
+		765B515B1EFDBA0A00D0DABC /* AnyObjectToRateTransformer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnyObjectToRateTransformer.swift; sourceTree = "<group>"; };
+		976E58DDC3F344BD70498E7D /* Pods-SimpleNetworkLayer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleNetworkLayer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleNetworkLayer/Pods-SimpleNetworkLayer.debug.xcconfig"; sourceTree = "<group>"; };
+		CC0C7970C24581E36BE6F596 /* Pods_SimpleNetworkLayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimpleNetworkLayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D731928328177BCCF377BFE6 /* Pods_SimpleNetworkLayerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimpleNetworkLayerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0A766BA21C7CBB804D327C3 /* Pods-SimpleNetworkLayerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleNetworkLayerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleNetworkLayerTests/Pods-SimpleNetworkLayerTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		765B511D1EFDA4B000D0DABC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC04E09950F28E0894D5558A /* Pods_SimpleNetworkLayer.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		765B51311EFDA4B000D0DABC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B388F92737B66E64045AA8C /* Pods_SimpleNetworkLayerTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2FA395A53E268B9CC5026237 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CC0C7970C24581E36BE6F596 /* Pods_SimpleNetworkLayer.framework */,
+				D731928328177BCCF377BFE6 /* Pods_SimpleNetworkLayerTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		765B51171EFDA4B000D0DABC = {
+			isa = PBXGroup;
+			children = (
+				765B51221EFDA4B000D0DABC /* SimpleNetworkLayer */,
+				765B51371EFDA4B000D0DABC /* SimpleNetworkLayerTests */,
+				765B51211EFDA4B000D0DABC /* Products */,
+				94C87B4919D797A43BD9AF0F /* Pods */,
+				2FA395A53E268B9CC5026237 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		765B51211EFDA4B000D0DABC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				765B51201EFDA4B000D0DABC /* SimpleNetworkLayer.app */,
+				765B51341EFDA4B000D0DABC /* SimpleNetworkLayerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		765B51221EFDA4B000D0DABC /* SimpleNetworkLayer */ = {
+			isa = PBXGroup;
+			children = (
+				765B51431EFDA4CE00D0DABC /* Networking */,
+				765B51451EFDA52700D0DABC /* Model */,
+				765B51461EFDA52700D0DABC /* Transformers */,
+				765B51231EFDA4B000D0DABC /* AppDelegate.swift */,
+				765B51271EFDA4B000D0DABC /* Main.storyboard */,
+				765B512A1EFDA4B000D0DABC /* Assets.xcassets */,
+				765B512C1EFDA4B000D0DABC /* LaunchScreen.storyboard */,
+				765B512F1EFDA4B000D0DABC /* Info.plist */,
+			);
+			path = SimpleNetworkLayer;
+			sourceTree = "<group>";
+		};
+		765B51371EFDA4B000D0DABC /* SimpleNetworkLayerTests */ = {
+			isa = PBXGroup;
+			children = (
+				765B51381EFDA4B000D0DABC /* SimpleNetworkLayerTests.swift */,
+				765B513A1EFDA4B000D0DABC /* Info.plist */,
+			);
+			path = SimpleNetworkLayerTests;
+			sourceTree = "<group>";
+		};
+		765B51431EFDA4CE00D0DABC /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				765B51591EFDB8A000D0DABC /* ApiClient.swift */,
+				765B514F1EFDB6E300D0DABC /* FinancialApiClient.swift */,
+				765B51491EFDB45F00D0DABC /* AppBaseApi.swift */,
+				765B51441EFDA4F000D0DABC /* ApiClients */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		765B51441EFDA4F000D0DABC /* ApiClients */ = {
+			isa = PBXGroup;
+			children = (
+				765B51531EFDB73300D0DABC /* FixerApi.swift */,
+			);
+			path = ApiClients;
+			sourceTree = "<group>";
+		};
+		765B51451EFDA52700D0DABC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				765B51551EFDB7E600D0DABC /* Rates.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		765B51461EFDA52700D0DABC /* Transformers */ = {
+			isa = PBXGroup;
+			children = (
+				765B51471EFDB42600D0DABC /* Transformer.swift */,
+				765B515B1EFDBA0A00D0DABC /* AnyObjectToRateTransformer.swift */,
+			);
+			path = Transformers;
+			sourceTree = "<group>";
+		};
+		94C87B4919D797A43BD9AF0F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				976E58DDC3F344BD70498E7D /* Pods-SimpleNetworkLayer.debug.xcconfig */,
+				35EC9A137275C9E9E1CEDCD9 /* Pods-SimpleNetworkLayer.release.xcconfig */,
+				F0A766BA21C7CBB804D327C3 /* Pods-SimpleNetworkLayerTests.debug.xcconfig */,
+				4ECFCA101519F55FEE23467A /* Pods-SimpleNetworkLayerTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		765B511F1EFDA4B000D0DABC /* SimpleNetworkLayer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 765B513D1EFDA4B100D0DABC /* Build configuration list for PBXNativeTarget "SimpleNetworkLayer" */;
+			buildPhases = (
+				5EA79B346447F9FE100A30C3 /* [CP] Check Pods Manifest.lock */,
+				765B511C1EFDA4B000D0DABC /* Sources */,
+				765B511D1EFDA4B000D0DABC /* Frameworks */,
+				765B511E1EFDA4B000D0DABC /* Resources */,
+				3A928244173F4449677285FF /* [CP] Embed Pods Frameworks */,
+				E3DA937A172345A1FBEB2D78 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SimpleNetworkLayer;
+			productName = SimpleNetworkLayer;
+			productReference = 765B51201EFDA4B000D0DABC /* SimpleNetworkLayer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		765B51331EFDA4B000D0DABC /* SimpleNetworkLayerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 765B51401EFDA4B100D0DABC /* Build configuration list for PBXNativeTarget "SimpleNetworkLayerTests" */;
+			buildPhases = (
+				F9B28FC51A9BB915B2B8D769 /* [CP] Check Pods Manifest.lock */,
+				765B51301EFDA4B000D0DABC /* Sources */,
+				765B51311EFDA4B000D0DABC /* Frameworks */,
+				765B51321EFDA4B000D0DABC /* Resources */,
+				8D4AC820F38A830B156A9C3F /* [CP] Embed Pods Frameworks */,
+				A7D9B27801314356280DFCFA /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				765B51361EFDA4B000D0DABC /* PBXTargetDependency */,
+			);
+			name = SimpleNetworkLayerTests;
+			productName = SimpleNetworkLayerTests;
+			productReference = 765B51341EFDA4B000D0DABC /* SimpleNetworkLayerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		765B51181EFDA4B000D0DABC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = com.inacioferrarini;
+				TargetAttributes = {
+					765B511F1EFDA4B000D0DABC = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
+					765B51331EFDA4B000D0DABC = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 765B511F1EFDA4B000D0DABC;
+					};
+				};
+			};
+			buildConfigurationList = 765B511B1EFDA4B000D0DABC /* Build configuration list for PBXProject "SimpleNetworkLayer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 765B51171EFDA4B000D0DABC;
+			productRefGroup = 765B51211EFDA4B000D0DABC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				765B511F1EFDA4B000D0DABC /* SimpleNetworkLayer */,
+				765B51331EFDA4B000D0DABC /* SimpleNetworkLayerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		765B511E1EFDA4B000D0DABC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				765B512E1EFDA4B000D0DABC /* LaunchScreen.storyboard in Resources */,
+				765B512B1EFDA4B000D0DABC /* Assets.xcassets in Resources */,
+				765B51291EFDA4B000D0DABC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		765B51321EFDA4B000D0DABC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3A928244173F4449677285FF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SimpleNetworkLayer/Pods-SimpleNetworkLayer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5EA79B346447F9FE100A30C3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8D4AC820F38A830B156A9C3F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SimpleNetworkLayerTests/Pods-SimpleNetworkLayerTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A7D9B27801314356280DFCFA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SimpleNetworkLayerTests/Pods-SimpleNetworkLayerTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E3DA937A172345A1FBEB2D78 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SimpleNetworkLayer/Pods-SimpleNetworkLayer-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F9B28FC51A9BB915B2B8D769 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		765B511C1EFDA4B000D0DABC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				765B515C1EFDBA0A00D0DABC /* AnyObjectToRateTransformer.swift in Sources */,
+				765B51541EFDB73300D0DABC /* FixerApi.swift in Sources */,
+				765B51561EFDB7E600D0DABC /* Rates.swift in Sources */,
+				765B51241EFDA4B000D0DABC /* AppDelegate.swift in Sources */,
+				765B514A1EFDB45F00D0DABC /* AppBaseApi.swift in Sources */,
+				765B51501EFDB6E300D0DABC /* FinancialApiClient.swift in Sources */,
+				765B515A1EFDB8A000D0DABC /* ApiClient.swift in Sources */,
+				765B51481EFDB42600D0DABC /* Transformer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		765B51301EFDA4B000D0DABC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				765B51391EFDA4B000D0DABC /* SimpleNetworkLayerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		765B51361EFDA4B000D0DABC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 765B511F1EFDA4B000D0DABC /* SimpleNetworkLayer */;
+			targetProxy = 765B51351EFDA4B000D0DABC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		765B51271EFDA4B000D0DABC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				765B51281EFDA4B000D0DABC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		765B512C1EFDA4B000D0DABC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				765B512D1EFDA4B000D0DABC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		765B513B1EFDA4B000D0DABC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		765B513C1EFDA4B000D0DABC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		765B513E1EFDA4B100D0DABC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 976E58DDC3F344BD70498E7D /* Pods-SimpleNetworkLayer.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SimpleNetworkLayer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.inacioferrarini.SimpleNetworkLayer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		765B513F1EFDA4B100D0DABC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 35EC9A137275C9E9E1CEDCD9 /* Pods-SimpleNetworkLayer.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SimpleNetworkLayer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.inacioferrarini.SimpleNetworkLayer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		765B51411EFDA4B100D0DABC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F0A766BA21C7CBB804D327C3 /* Pods-SimpleNetworkLayerTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SimpleNetworkLayerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.inacioferrarini.SimpleNetworkLayerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SimpleNetworkLayer.app/SimpleNetworkLayer";
+			};
+			name = Debug;
+		};
+		765B51421EFDA4B100D0DABC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4ECFCA101519F55FEE23467A /* Pods-SimpleNetworkLayerTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SimpleNetworkLayerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.inacioferrarini.SimpleNetworkLayerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SimpleNetworkLayer.app/SimpleNetworkLayer";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		765B511B1EFDA4B000D0DABC /* Build configuration list for PBXProject "SimpleNetworkLayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				765B513B1EFDA4B000D0DABC /* Debug */,
+				765B513C1EFDA4B000D0DABC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		765B513D1EFDA4B100D0DABC /* Build configuration list for PBXNativeTarget "SimpleNetworkLayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				765B513E1EFDA4B100D0DABC /* Debug */,
+				765B513F1EFDA4B100D0DABC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		765B51401EFDA4B100D0DABC /* Build configuration list for PBXNativeTarget "SimpleNetworkLayerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				765B51411EFDA4B100D0DABC /* Debug */,
+				765B51421EFDA4B100D0DABC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 765B51181EFDA4B000D0DABC /* Project object */;
+}
