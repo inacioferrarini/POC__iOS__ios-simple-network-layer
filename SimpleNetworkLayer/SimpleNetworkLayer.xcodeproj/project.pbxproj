@@ -22,6 +22,9 @@
 		769257381EFDCC3C00ADF977 /* ValidRatesFixture.json in Resources */ = {isa = PBXBuildFile; fileRef = 769257371EFDCC3C00ADF977 /* ValidRatesFixture.json */; };
 		7692573A1EFDCC4900ADF977 /* ValidEmptyRatesFixture.json in Resources */ = {isa = PBXBuildFile; fileRef = 769257391EFDCC4900ADF977 /* ValidEmptyRatesFixture.json */; };
 		76BBCD3B1EFDCFBE000491BA /* AnyObjectToRateTransformerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769257301EFDCAB900ADF977 /* AnyObjectToRateTransformerSpec.swift */; };
+		76D8716C1EFDDAEB00C14C77 /* FixerApi_byCurrency_response.json in Resources */ = {isa = PBXBuildFile; fileRef = 76D8716B1EFDDAEB00C14C77 /* FixerApi_byCurrency_response.json */; };
+		76FF517A1EFDD5C5000B8BE9 /* FixerApiSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FF51791EFDD5C5000B8BE9 /* FixerApiSpec.swift */; };
+		76FF517D1EFDD6DB000B8BE9 /* FixerApi_all_response.json in Resources */ = {isa = PBXBuildFile; fileRef = 76FF517C1EFDD6DB000B8BE9 /* FixerApi_all_response.json */; };
 		7B388F92737B66E64045AA8C /* Pods_SimpleNetworkLayerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D731928328177BCCF377BFE6 /* Pods_SimpleNetworkLayerTests.framework */; };
 		FC04E09950F28E0894D5558A /* Pods_SimpleNetworkLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC0C7970C24581E36BE6F596 /* Pods_SimpleNetworkLayer.framework */; };
 /* End PBXBuildFile section */
@@ -58,6 +61,9 @@
 		769257331EFDCB3000ADF977 /* FixtureHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FixtureHelper.swift; sourceTree = "<group>"; };
 		769257371EFDCC3C00ADF977 /* ValidRatesFixture.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ValidRatesFixture.json; sourceTree = "<group>"; };
 		769257391EFDCC4900ADF977 /* ValidEmptyRatesFixture.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ValidEmptyRatesFixture.json; sourceTree = "<group>"; };
+		76D8716B1EFDDAEB00C14C77 /* FixerApi_byCurrency_response.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = FixerApi_byCurrency_response.json; sourceTree = "<group>"; };
+		76FF51791EFDD5C5000B8BE9 /* FixerApiSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FixerApiSpec.swift; sourceTree = "<group>"; };
+		76FF517C1EFDD6DB000B8BE9 /* FixerApi_all_response.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = FixerApi_all_response.json; sourceTree = "<group>"; };
 		976E58DDC3F344BD70498E7D /* Pods-SimpleNetworkLayer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleNetworkLayer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleNetworkLayer/Pods-SimpleNetworkLayer.debug.xcconfig"; sourceTree = "<group>"; };
 		CC0C7970C24581E36BE6F596 /* Pods_SimpleNetworkLayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimpleNetworkLayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D731928328177BCCF377BFE6 /* Pods_SimpleNetworkLayerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimpleNetworkLayerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -179,6 +185,7 @@
 		7692572E1EFDC43E00ADF977 /* ApiClient */ = {
 			isa = PBXGroup;
 			children = (
+				76FF51791EFDD5C5000B8BE9 /* FixerApiSpec.swift */,
 			);
 			name = ApiClient;
 			path = Networking/ApiClient;
@@ -212,10 +219,21 @@
 		769257361EFDCBAF00ADF977 /* fixtures */ = {
 			isa = PBXGroup;
 			children = (
+				76FF517B1EFDD6C7000B8BE9 /* networking */,
 				769257371EFDCC3C00ADF977 /* ValidRatesFixture.json */,
 				769257391EFDCC4900ADF977 /* ValidEmptyRatesFixture.json */,
 			);
 			path = fixtures;
+			sourceTree = "<group>";
+		};
+		76FF517B1EFDD6C7000B8BE9 /* networking */ = {
+			isa = PBXGroup;
+			children = (
+				76FF517C1EFDD6DB000B8BE9 /* FixerApi_all_response.json */,
+				76D8716B1EFDDAEB00C14C77 /* FixerApi_byCurrency_response.json */,
+			);
+			name = networking;
+			path = ../networking;
 			sourceTree = "<group>";
 		};
 		94C87B4919D797A43BD9AF0F /* Pods */ = {
@@ -330,8 +348,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76D8716C1EFDDAEB00C14C77 /* FixerApi_byCurrency_response.json in Resources */,
 				7692573A1EFDCC4900ADF977 /* ValidEmptyRatesFixture.json in Resources */,
 				769257381EFDCC3C00ADF977 /* ValidRatesFixture.json in Resources */,
+				76FF517D1EFDD6DB000B8BE9 /* FixerApi_all_response.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -451,6 +471,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				769257341EFDCB3000ADF977 /* FixtureHelper.swift in Sources */,
+				76FF517A1EFDD5C5000B8BE9 /* FixerApiSpec.swift in Sources */,
 				76BBCD3B1EFDCFBE000491BA /* AnyObjectToRateTransformerSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -15,12 +15,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
-        let client = FinancialApiClient()
-        client.rates.all(completionBlock: { (rates) in
-            print("\(String(describing: rates))")
-        }) { (error) in
-            print("error: \(error)")
-        }
+//        let client = FinancialApiClient()
+//        client.rates.all(completionBlock: { (rates) in
+//            print("\(String(describing: rates))")
+//        }) { (error) in
+//            print("error: \(error)")
+//        }
         
         return true
     }
