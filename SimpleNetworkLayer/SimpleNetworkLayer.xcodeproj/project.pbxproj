@@ -11,7 +11,6 @@
 		765B51291EFDA4B000D0DABC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 765B51271EFDA4B000D0DABC /* Main.storyboard */; };
 		765B512B1EFDA4B000D0DABC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 765B512A1EFDA4B000D0DABC /* Assets.xcassets */; };
 		765B512E1EFDA4B000D0DABC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 765B512C1EFDA4B000D0DABC /* LaunchScreen.storyboard */; };
-		765B51391EFDA4B000D0DABC /* SimpleNetworkLayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765B51381EFDA4B000D0DABC /* SimpleNetworkLayerTests.swift */; };
 		765B51481EFDB42600D0DABC /* Transformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765B51471EFDB42600D0DABC /* Transformer.swift */; };
 		765B514A1EFDB45F00D0DABC /* AppBaseApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765B51491EFDB45F00D0DABC /* AppBaseApi.swift */; };
 		765B51501EFDB6E300D0DABC /* FinancialApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765B514F1EFDB6E300D0DABC /* FinancialApiClient.swift */; };
@@ -43,7 +42,6 @@
 		765B512D1EFDA4B000D0DABC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		765B512F1EFDA4B000D0DABC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		765B51341EFDA4B000D0DABC /* SimpleNetworkLayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleNetworkLayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		765B51381EFDA4B000D0DABC /* SimpleNetworkLayerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleNetworkLayerTests.swift; sourceTree = "<group>"; };
 		765B513A1EFDA4B000D0DABC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		765B51471EFDB42600D0DABC /* Transformer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transformer.swift; sourceTree = "<group>"; };
 		765B51491EFDB45F00D0DABC /* AppBaseApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppBaseApi.swift; sourceTree = "<group>"; };
@@ -125,7 +123,8 @@
 		765B51371EFDA4B000D0DABC /* SimpleNetworkLayerTests */ = {
 			isa = PBXGroup;
 			children = (
-				765B51381EFDA4B000D0DABC /* SimpleNetworkLayerTests.swift */,
+				7692572E1EFDC43E00ADF977 /* ApiClient */,
+				7692572F1EFDC43E00ADF977 /* Transformers */,
 				765B513A1EFDA4B000D0DABC /* Info.plist */,
 			);
 			path = SimpleNetworkLayerTests;
@@ -165,6 +164,22 @@
 				765B515B1EFDBA0A00D0DABC /* AnyObjectToRateTransformer.swift */,
 			);
 			path = Transformers;
+			sourceTree = "<group>";
+		};
+		7692572E1EFDC43E00ADF977 /* ApiClient */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ApiClient;
+			path = Networking/ApiClient;
+			sourceTree = "<group>";
+		};
+		7692572F1EFDC43E00ADF977 /* Transformers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Transformers;
+			path = Networking/Transformers;
 			sourceTree = "<group>";
 		};
 		94C87B4919D797A43BD9AF0F /* Pods */ = {
@@ -395,7 +410,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				765B51391EFDA4B000D0DABC /* SimpleNetworkLayerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -597,6 +611,7 @@
 				765B513F1EFDA4B100D0DABC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		765B51401EFDA4B100D0DABC /* Build configuration list for PBXNativeTarget "SimpleNetworkLayerTests" */ = {
 			isa = XCConfigurationList;
@@ -605,6 +620,7 @@
 				765B51421EFDA4B100D0DABC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
